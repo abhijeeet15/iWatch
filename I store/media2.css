@@ -1,0 +1,16 @@
+@media(min-width:576px) and (max-width:767px)
+{
+    .set img 
+    {
+        margin-top: 10px;
+    }
+    .box 
+    {
+        width: 100%;
+    }
+    .box img 
+    {
+        width: 100%;
+    }
+ 
+}

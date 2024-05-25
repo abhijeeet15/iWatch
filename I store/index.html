@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+     <div class="navbar navbar-expand-lg navbar-light bg-light" style="height: 100px;">
+        <div class="container-fluid">
+            <a  class="navbar-brand ps-3" href="#">
+                <img src="img/logo.png" alt="">
+            </a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto me-5">
+                    <li class="nav-item text-dark"><a href="" class="nav-link active pe-4 ps-2 me-lg-1 ms-lg-1">HOME</a></li>
+                    <li class="nav-item"><a href="" class="nav-link pe-4 ps-2 me-lg-1 ms-lg-1">SERVICES</a></li>
+                    <li class="nav-item"><a href="" class="nav-link  pe-2 ps-2 me-lg-1 ms-lg-1">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="" class="nav-link pe-2 ps-2 me-lg-1 ms-lg-1">WATCHES</a></li>
+                    <li class="nav-item"><a href="" class="nav-link  pe-2 ps-2 me-lg-1 ms-lg-1">SALE</a></li>
+                    <li class="nav-item"><a href="" class="nav-link pe-2  ps-2 me-lg-1 ms-lg-1">BLOG</a></li>
+                    <li class="nav-item pe-2 ps-2 dropdown"><a href="" class="nav-link dropdown-toggle"  data-bs-toggle="dropdown">PAGES</a>
+                        <ul class="dropdown-menu">
+                            <li class=" pe-3"><a href="" class="dropdown-item"></a> ABOUT</li>
+                            <li  class=" pe-3"><a href="" class="dropdown-item"></a> BLOG</li>
+                            <li  class="pe-3"><a href="" class="dropdown-item"></a> SHOP</li>
+                            <li  class=" pe-3"><a href="" class="dropdown-item"></a> CART</li>
+                            <li  class="pe-3"><a href="" class="dropdown-item"></a> CHECKOUT</li>
+                            <li  class=" pe-3"><a href="" class="dropdown-item"></a> SINGLE POST</li>
+                            <li class=" pe-3"><a href="" class="dropdown-item"></a> SINGLE PRODUCT</li>
+                            <li  class="pe-3"><a href="" class="dropdown-item"></a> CONTACT</li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+
+            <div class="icons d-sm-none d-md-none   d-lg-block">
+              <span class="ps-2 pe-2 pt-1"><a href=""><i class="bi bi-search text-dark fs-6"></i></a></span>
+              <span class="ps-2 pe-2"><a href=""><i class="bi bi-person-fill text-dark  fs-5"></i></a></span>
+              <span class="ps-2 pe-2"><a href=""><i class="bi bi-cart-fill text-dark fs-5"></i></a></span>
+          </div>
+        </div>
+     </div>
+
+     <!----------------------------------------------------- offcanvas ------------------------------------------------------->
+     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+        <div class="offcanvas-header ms-3">
+            <img src="img/logo.png" alt="">
+        
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item text-dark"><a href="" class="nav-link active ps-4 pe-4">HOME</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-4">SERVICES</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-4">PRODUCTS</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-4">WATCHES</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-4">SALE</a></li>
+                <li class="nav-item"><a href="" class="nav-link ps-4 pe-4">BLOG</a></li>
+                <li class="nav-item ps-4 pe-4 dropdown"><a href="" class="nav-link dropdown-toggle"  data-bs-toggle="dropdown">PAGES</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="" class="dropdown-item">ABOUT</a></li>
+                        <li><a href="" class="dropdown-item">ABOUT</a></li>
+                        <li><a href="" class="dropdown-item">SHOP</a></li>
+                        <li><a href="" class="dropdown-item">CART</a></li>
+                        <li><a href="" class="dropdown-item">CHECKOUT</a></li>
+                        <li><a href="" class="dropdown-item">SINGLE POST</a></li>
+                        <li><a href="" class="dropdown-item">SINGLE PRODUCT</a></li>
+                        <li><a href="" class="dropdown-item">CONTACT</a></li>
+                    </ul>
+                </li>   
+            </ul>
+
+        </div>
+      </div>
+      <!----------------------------------------------- slider-------------------------------------------------------->
+
+      <div id="slider" class="carousel slide d-sm-none d-md-block d-lg-block" data-bs-ride="carousel" >
+        <div class="carousel-inner" style="height: 600px; background-color: whitesmoke;">
+          <div class="carousel-item active">
+            <div class="container bg-black">
+              <div class="row d-flex align-items-center">
+                <div class="col-6 ll">
+                  <h1 class="display-1" style="padding-bottom: 90px;">YOUR PRODUCT ARE GREAT.</h1>
+                  <a
+                  style="margin-bottom: 200px; padding: 15px 40px; border-radius: 0%; letter-spacing: 2px;" href="shop.html"
+                    class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a >
+                </div>
+                <div class="col-6 ll">
+                  <img src="img/mm.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row d-flex align-items-center">
+                  <div class="col-6 right">
+                    <h1 class="display-1" style="padding-bottom: 90px;">TECHNOLOGY HACK YOU WON'T  GET</h1>
+                  <a
+                  style="margin-bottom: 200px; padding: 15px 40px; border-radius: 0%; letter-spacing: 2px;" href="shop.html"
+                    class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                  </div>
+                  <div class="col-6 right">
+                    <img src="img/mm.png " alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next" >
+          <i class="bi bi-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="slider" class="carousel slide d-sm-block  d-md-none  d-lg-none" data-bs-ride="carousel">
+        <div class="carousel-inner" style="height: 500px">
+          <div class="carousel-item active">
+            <div class="container bg-black">
+              <div class="row d-flex align-items-center">
+                <div class="col-12 ll">
+                  <div class="con text-dark" style="position: absolute; top:70px; left:60px;">
+                    <h1 class="display-2 text-uppercase text-dark what">YOUR PRODUCT ARE GREAT.</h1>
+                    <a
+                      href="shop.html"
+                      class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                  </div>
+                    <div class="con2 ll"style="opacity: 0.5;" >
+                      <img src="img/mm.png" alt="">
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row d-flex align-items-center">
+                  <div class="col-12 right">
+                    <div class="con text-dark " style="position: absolute; top:70px; left:60px;">
+                      <h1 class="display-2 text-uppercase text-dark ">Technology Hack You Won't Get</h1>
+                      <a
+                        href="shop.html"
+                        class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
+                    </div>
+                      <div class="con2 right"style="opacity: 0.5;" >
+                        <img src="img/mm.png " alt="" >
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider"
+          data-bs-slide="next">
+          <i class="bi bi-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="company-services padding-large">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3  col-md-6 mb-sm-2">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <i class="bi bi-cart"></i>
+
+
+                        </div>
+                        <div class="icon-box-content">
+                            <h3 class="display-1 fw-normal">FREE DELIVERY</h3>
+                            <p>consectetur adipi elit lorem ipsum dolor sit amet</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-6 mb-sm-2">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <i class="bi bi-award"></i>
+
+
+                        </div>
+                        <div class="icon-box-content">
+                            <h3 class="display-1 fw-normal">QUALITY GUARANTEE</h3>
+                            <p>Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6  mb-sm-2">
+                    <div class="icon-box d-flex">
+                        <div class="icon-box-icon pe-3 pb-3">
+                            <i class="bi bi-tag"></i>
+
+
+                        </div>
+                        <div class="icon-box-content">
+                            <h3 class="display-1 fw-normal">DAILY OFFERS</h3>
+                            <p>Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-lg-3  col-md-6 mb-sm-2">
+                        <div class="icon-box d-flex">
+                            <div class="icon-box-icon pe-3 pb-3">
+                                <i class="bi bi-shield-plus"></i>
+    
+    
+                            </div>
+                            <div class="icon-box-content">
+                                <h3 class="display-1 fw-normal">100% SECURE PAYMENT</h3>
+                                <p>consectetur adipi elit lorem ipsum dolor sit amet</p>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+
+      </section>
+
+      <div class="container ">
+        <div class="display-header d-flex justify-content-between pb-3">
+          <h2 class="display-7  text-uppercase">Mobile Products</h2>
+          <div class="btn-right">
+            <a href="shop.html" class="btn btn-medium btn-normal text-uppercase"><u>GO to Shop</u></a>
+          </div>
+        </div>
+       </div>
+        <div class="container pb-5">
+          <div class="row">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <img src="img/1.jpg" alt="" class="img-fluid">
+                    <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                      <h4 style="font-weight: 400;">IPHONE</h4>
+                      <span style="color: rgb(114 174 200); font-size: 1.5em;">$1100</span>
+                    </div>
+                    
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3" style="font-size: 15px;"></i>ADD TO CART</a>
+                        
+                      
+                      </div>
+                    </div>
+                   
+                  
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <img src="img/2.jpg" alt="" class="img-fluid">
+                    <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                      <h4 style="font-weight: 400;">IPHONE</h4>
+                      <span style="color: rgb(114 174 200); font-size: 1.5em;">$1100</span>
+                    </div>
+                    <div class="cart-concern d-flex">
+                      <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                    </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder mb-5">
+                    <img src="img/3.jpg" alt="" class="img-fluid">
+                    <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                      <h4 style="font-weight: 400;">IPHONE</h4>
+                      <span style="color: rgb(114 174 200); font-size: 1.5em;">$780</span>
+                    </div>
+                    <div class="cart-concern d-flex">
+                      <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                    
+                    </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <img src="img/4.jpg" alt="" class="img-fluid">
+                    <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                      <h4 style="font-weight: 400;">IPHONE</h4>
+                      <span style="color: rgb(114 174 200); font-size: 1.5em;">$1500</span>
+                    </div>
+                    <div class="cart-concern d-flex">
+                      <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                    </div>
+                   </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <img src="img/5.jpg" alt="" class="img-fluid">
+                    <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                      <h4 style="font-weight: 400;">IPHONE</h4>
+                      <span style="color: rgb(114 174 200); font-size: 1.5em;">$1300</span>
+                    </div>
+                    <div class="cart-concern d-flex">
+                      <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                    </div>
+                   </div>
+                </div>
+                
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="container pt-5">
+          <div class="display-header d-flex justify-content-between pb-3">
+            <h2 class="display-7  text-uppercase">smart watches</h2>
+            <div class="btn-right">
+              <a href="shop.html" class="btn btn-medium btn-normal text-uppercase"><u>Go to Shop</u></a>
+            </div>
+          </div>
+         </div>
+        
+
+          <div class="container">
+            <div class="row">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image-holder mb-5">
+                      <img src="img/6.jpg" alt="" class="img-fluid">
+                      <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                        <h4 class="bmw" style="font-weight: 400;">IPHONE</h4>
+                        <span style="color: rgb(114 174 200); font-size: 1.5em;">$1100</span>
+                      </div>
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"><i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder">
+                      <img src="img/7.jpg" alt="" class="img-fluid">
+                      <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                        <h4 class="bmw" style="font-weight: 400;">HEAVY WATCH</h4>
+                        <span style="color: rgb(114 174 200); font-size: 1.5em;">$680</span>
+                      </div>
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder">
+                      <img src="img/8.jpg" alt="" class="img-fluid">
+                      <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                        <h4 class="bmw" style="font-weight: 400;">SPOTTED WATCH</h4>
+                        <span style="color: rgb(114 174 200); font-size: 1.5em;">$750</span>
+                      </div>
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder">
+                      <img src="img/9.jpg" alt="" class="img-fluid">
+                      <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                        <h4 class="bmw" style="font-weight: 400;">BLACK WATCH</h4>
+                        <span style="color: rgb(114 174 200); font-size: 1.5em;">$650</span>
+                      </div>
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image-holder">
+                      <img src="img/10.jpg" alt="" class="img-fluid">
+                      <div class="cnt1 d-flex justify-content-between"style="padding: 0% 10px;">
+                        <h4 class="bmw" style="font-weight: 400;">BLACK WATCH</h4>
+                        <span style="color: rgb(114 174 200); font-size: 1.5em;">$750</span>
+                      </div>
+                      <div class="cart-concern d-flex">
+                        <a href="#" class="btn animate__animated animate__fadeInUp btn-medium btn-dark"> <i class="bi bi-cart3 text-light" style="font-size: 15px;"></i>ADD TO CART</a>
+                      </div>
+                     </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+              </div >
+            </div>
+           
+            
+          </div>
+      
+        <!----------------------------------------------------- Swiper ----------------------------------------------->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                  
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                },
+            });
+        </script>
+
+
+      <!------------------------------------------------------ sm ---------------------------------------------------------------->
+
+      <section  class="mt-5" style="background-image: url(img/mobile.png); background-position: right; background-repeat: no-repeat; background-color: #edf1f3;">
+        <div class="container" style="height: 550px;">
+            <div class="row d-flex flex-wrap align-items-center">
+                <div class="col-md-6 col-sm-12">
+                    <div class="content  padding">
+                        <h3 style="font-size: 1.75rem; font-weight: 400;
+                        line-height: 1.2;" >10% off</h3>
+                        <h2 class="display-2 pb-5 text-dark">NEW YEAR <br> SALE</h2>
+                        <a href="" class="jj btn btn-medium btn-dark  ps-5 pe-5 pt-2 pb-2 ww">SHOP SALE</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+               </div>                                                                                                                                                                 
+            </div>
+        </div>
+      </section>
+      
+
+      <div class="container">
+        <div class="row">
+            <div class="dispaly-header d-flex justify-content-between pb-3 mt-5">
+                <h2 class="display-7 text-dark" style="    font-weight: 400;
+                line-height: 1.2;">LATEST POSTS</h2>
+               
+                <a class="text-dark kk" href="">READ BLOG</a>
+              </div>
+            <div class="col-lg-4 col-sm-12  mb-sm-2">
+                <div class="card">
+                    <img src="img/11.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="card-body">
+                    <div class="card-bit">
+                        <span>FEB 22, 2023</span>
+                        <span>- GADGETS</span>
+                       
+                    </div>
+                    <div class="title">
+                        <a href="">GET SOME COOL GADGETS IN 2023</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-12  mb-sm-2">
+               
+                <div class="card">
+                    <img src="img/12.jpg" alt="" class="img-fluid">
+                </div>
+          
+                <div class="card-body">
+                    <div class="card-bit">
+                        <span>FEB 25, 2023</span>
+                        <span>- TECHNOLOGY</span>
+                       
+                    </div>
+                    <div class="title me-3">
+                        <a href="">TECHNOLOGY HACK YOU WON'T GET</a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-sm-12 mb-sm-2">
+                <div class="card">
+                    <img src="img/13.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="card-body">
+                    <div class="card-bit">
+                        <span>FEB 22, 2023</span>
+                        <span>- CAMERA</span>
+                       
+
+                    </div>
+                    <div class="title">
+                        <a href="">TOP 10 SMALL CAMERA IN THE WORLD</a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+
+      <div class="carousel slide" id="slider2" data-bs-ride="carousel">
+        <div class="carousel-inner" style="background-color: white;padding-top: 70px;">
+           
+           
+                <div class="carousel-item active">
+                    <div class="quotation text-center pt-5">
+                        <img src="img/gray.png" alt="" class="img-fluid">
+                  
+                    </div>
+
+                    <div class="review-item  text-center pt-5">
+                        <blockquote>
+                            “A blog is a digital publication that can complement a website or exist <br> independently. A blog may include articles, short posts, listicles, <br> infographics, videos, and other digital content.”
+                        </blockquote>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div class="auther">
+                            <div class="name text-dark pt-2">
+                                JENNIE ROSE
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+          
+            <div class="carousel-item">
+               
+                    <div class="quotation text-center pt-5">
+                        <img src="img/gray.png" alt="" class="img-fluid">             
+                    </div>
+
+                    <div class="review-item  text-center pt-5">
+                        <blockquote>
+                          “Tempus oncu enim pellen tesque este pretium in neque, elit morbi <br> sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen <br> dise sagittis lorem habi tasse morbi.”
+
+                        </blockquote>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                            <i class="bi bi-star"></i>
+
+                        </div>
+                        <div class="auther">
+                            <div class="name text-dark pt-2">
+                               EMMA CHAMBERLIN
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+         
+       
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+            <i class="bi bi-chevron-left text-dark" style="font-size: 50px;"></i>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+            <i class="bi bi-chevron-right text-dark" style="font-size: 50px;"></i>
+          </button>
+      </div>
+
+
+
+      <section id="subscribe" class="container-grid padding-large position-relative overflow-hidden">
+        <div class="container" style="margin-top: 20px;">
+          <div class="row" style="background-color: #212529 ; height: 220px;" >
+            
+                  <div class="col-lg-5 col-sm-12 pt-2 col-md-6">
+                      <div class="dispaly-header pe-3">
+                          <h2 class="display-6 text-light" style="font-weight: 400;line-height: 1.2;">SUBSCRIBE US NOW</h2>
+                          <p style="color: #aeaeae; font-size: 17px;  margin-bottom: 1rem;">Get latest news, updates and deals directly mailed to your inbox.</p>
+                      </div>
+                  </div>
+  
+                  <div class="col-lg-5 col-sm-12 mb-sm-2 col-md-5">
+                      <form class="form validate">
+                          <div class="input-group flex-wrap">
+                              <input class="form-control pt-1 pb-1" type="email" placeholder="Your email address here" style="border-radius: 0%;">
+                              <div class="col-lg-2 col-sm-12  oo">
+                                <button class="btn btn-yoy btn-primary pt-3 pb-3" type="submit" style="border-radius: 0%;">SUBSCRIBE</button>
+                              </div>
+                          </div>
+                      </form>
+                    
+                  </div>
+         
+          </div>
+        </div>
+      </section>
+
+      <div class="container mb-5">
+        <div class="row justify-content-lg-center justify-content-sm-start justify-content-md-center">
+          <div class="display-nav text-dark text-center pb-5">
+            <h2 class="display-6 text-dark" style="font-weight: 400; line-height: 1.2;">SHOP OUR INSTA</h2>
+              
+            </div>
+          <div class="col-lg-2 col-sm-4 col-md-2 box">
+            <img src="img/14.jpg" alt="" class=" w-100 img-fluid">
+            <div class="icon-overlay  d-flex justify-content-center">
+              <i class="bi bi-instagram animate__animated animate__fadeInUp"></i>
+          
+
+          </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-md-2 box">
+            <img src="img/15.jpg" alt="" class=" w-100 img-fluid">
+            <div class="icon-overlay  d-flex justify-content-center">
+              <i class="bi bi-instagram animate__animated animate__fadeInUp"></i>
+          
+
+          </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-md-2 box">
+            <img src="img/16.jpg" alt="" class=" w-100 img-fluid">
+            <div class="icon-overlay  d-flex justify-content-center">
+              <i class="bi bi-instagram animate__animated animate__fadeInUp"></i>
+          
+
+          </div>
+          </div>
+          <div class="col-lg-2 col-sm-4  col-md-2 box set">
+            <img src="img/17.jpg" alt="" class=" w-100 img-fluid">
+            <div class="icon-overlay  d-flex justify-content-center">
+              <i class="bi bi-instagram animate__animated animate__fadeInUp"></i>
+          
+
+          </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-md-2 box  set">
+            <img src="img/18.jpg" alt="" class=" w-100  img-fluid">
+            <div class="icon-overlay  d-flex justify-content-center">
+              <i class="bi bi-instagram animate__animated animate__fadeInUp"></i>
+          
+
+          </div>
+          </div>
+        </div>
+      </div>
+
+    <!----------------------------------------------------- footer ------------------------------------------------------------->
+    <footer id="footer" class="overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-area">
+            <div class="row d-flex flex-wrap justify-content-between">
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu">
+                  <img src="img/logo.png" alt="">
+                  <p>Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio
+                    erat nullam fringilla.</p>
+                  <div class="social-links">
+                    <ul class="d-flex list-unstyled">
+                      <li><a href=""></a><i class="bi bi-facebook"></i></li>
+                      <li><a href=""></a><i class="bi bi-instagram"></i></li>
+                      <li><a href=""></a><i class="bi bi-twitter"></i></li>
+                      <li><a href=""></a><i class="bi bi-linkedin"></i></li>
+                      <li><a href=""></a><i class="bi bi-youtube"></i></li>
+    
+                    </ul>
+    
+                  </div>
+                </div>
+    
+              </div>
+    
+              <div class="col-lg-2 col-sm-6 pb-3">
+                <div class="footer-menu">
+                  <h5 style="font-weight: 500; line-height: 1.2; font-size: 1.25rem;">QUICK LINKS</h5>
+                  <ul class="menu-list list-unstyled">
+                    <li class="menu-item pb-2 ps-2">HOME</li>
+                    <li class="menu-item pb-2 ps-2">ABOUT</li>
+                    <li class="menu-item pb-2 ps-2">SHOP</li>
+                    <li class="menu-item pb-2 ps-2">BLOGS</li>
+                    <li class="menu-item pb-2 ps-2">CONTACT</li>
+    
+                  </ul>
+    
+                </div>
+    
+    
+              </div>
+    
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu">
+                  <h5 style="font-weight: 500; line-height: 1.2; font-size: 1.25rem;">HELP & INFO HELP</h5>
+                  <ul class="menu-list list-unstyled">
+                    <li class="menu-item pb-2 ps-2">TRACK YOUR ORDER</li>
+                    <li class="menu-item pb-2 ps-2">RETURNS POLICIES</li>
+                    <li class="menu-item pb-2 ps-2">SHIPPING + DELIVERY</li>
+                    <li class="menu-item pb-2 ps-2">CONTACT US</li>
+                    <li class="menu-item pb-2 ps-2">FAQS</li>
+    
+                  </ul>
+    
+                </div>
+    
+    
+              </div>
+    
+              <div class="col-lg-3 col-sm-6 pb-3">
+                <div class="footer-menu contact items">
+                  <h5 style="font-weight: 500; line-height: 1.2; font-size: 1.25rem;">CONTACT US</h5>
+                  <p>Do you have any queries or suggestions?
+                    <a href="" style="color: black;">yourinfo@gmail.com</a>
+                  </p>
+                  <p>If you need support? Just give us a call.
+                    <a href="" style="color: black;">+55 111 222 333 44</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4">
+            <div class="why d-flex">
+              <h5 style="color: #aeaeae; font-size: 1.2em; font-weight: 400;">We ship with:</h5>
+              <img src="img/dhl.png" alt="">
+              <img src="img/ship 2.png" alt="">
+            </div>
+    
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="hh d-flex">
+              <h5 style="color: #aeaeae; font-size: 1.2em;  font-weight: 400;">Payment options:</h5>
+              <img src="img/v1.jpg" class="ps-2" alt="">
+              <img src="img/v2.jpg" class="ps-2" alt="">
+              <img src="img/v3.jpg" class="ps-2" alt="">
+            </div>
+    
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <div class="copy d-flex">
+              <p class="">
+                &copy; ABHIJEET
+              </p>
+    
+            </div>
+          </div>
+    
+    
+        </div>
+      </div>
+    
+    </div>
+    
+</body>
+</html>
